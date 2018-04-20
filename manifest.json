@@ -1,0 +1,35 @@
+ {
+     "name": "Complexity Checker",
+     "version": "1.0",
+     "description": "Automatically checks complexity of websites",
+     "permissions": ["tabs", "declarativeContent", "storage"],
+     "background":
+     {
+         "scripts": ["lib/background.js"],
+         "persistent": false
+     },
+     "content_scripts": [
+     {
+     	"matches": ["*://*/*"],
+         "js": ["lib/share/EventTarget.js", "lib/processor/Results.js", "lib/processor/Processor.js", "lib/processor/LinkProcessor.js", "lib/processor/ImageProcessor.js", "lib/processor/PageProcessor.js", "lib/processor/TextProcessor.js", "lib/processor/index.js"]
+     }],
+     "browser_action":
+     {
+         "default_popup": "html/popup.html",
+         "default_icon":
+         {
+             "16": "images/get_started16.png",
+             "32": "images/get_started32.png",
+             "48": "images/get_started48.png",
+             "128": "images/get_started128.png"
+         }
+     },
+     "icons":
+     {
+         "16": "images/get_started16.png",
+         "32": "images/get_started32.png",
+         "48": "images/get_started48.png",
+         "128": "images/get_started128.png"
+     },
+     "manifest_version": 2
+ }

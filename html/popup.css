@@ -1,0 +1,72 @@
+body {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgb(156, 0, 75);
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+ul.stats {
+    margin: 0;
+    padding: 0;
+}
+
+ul.stats li {
+    margin: 5px 0;
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+ul.stats li .label {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    color: rgb(30, 30, 30);
+    font-weight: 300;
+}
+
+ul.stats li .value {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    color: rgb(156, 0, 75);
+    font-weight: 600;
+}
+
+ul.stats li .approximated:before {
+	content: '~';
+    color: rgb(30, 30, 30);
+    font-weight: 300;
+}
+
+ul.stats li .suffix {
+    margin-left: 5px;
+    width: 20%;
+    text-align: left;
+    color: rgb(30, 30, 30);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.url {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+    background-color: rgb(156, 0, 75);
+	text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    color: rgb(255,255,255);
+}
