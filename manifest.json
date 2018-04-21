@@ -11,7 +11,7 @@
      "content_scripts": [
      {
      	"matches": ["*://*/*"],
-         "js": ["lib/share/EventTarget.js", "lib/processor/Results.js", "lib/processor/Processor.js", "lib/processor/LinkProcessor.js", "lib/processor/ImageProcessor.js", "lib/processor/PageProcessor.js", "lib/processor/TextProcessor.js", "lib/processor/index.js"]
+         "js": ["lib/share/EventTarget.js", "lib/share/EventBusClient.js", "lib/processor/Results.js", "lib/processor/Processor.js", "lib/processor/LinkProcessor.js", "lib/processor/ImageProcessor.js", "lib/processor/PageProcessor.js", "lib/processor/TextProcessor.js", "lib/processor/index.js"]
      }],
      "browser_action":
      {
